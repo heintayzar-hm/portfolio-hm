@@ -1,11 +1,27 @@
+import AboutMe from "./components/AboutMe";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Testimony from "./components/Testimony";
+
 function App() {
   return (
     <>
-      <h1 className="bg-green-900 hover:bg-black">Portfolio</h1>
-      <img
-        src="https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1490&q=80"
-        alt="bg"
-      />
+      <Header />
+
+      <AboutMe />
+
+     <Skills />
+
+     <Projects />
+
+    <Testimony />
+
+    <Contact />
+
+      <Footer />
     </>
   );
 }
