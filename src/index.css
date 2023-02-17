@@ -2,3 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
+.hover-class:hover {
+    color: #ed7914;
+    cursor: progress;
+    text-shadow: 0 0 1rem #04ff97, -0.2rem 0.1rem 0rem #000000, -15rem 14rem 20rem #c32828;
+    font-style: italic;
+}
+
+.hover-class-2:hover {
+    color: blue;
+    cursor: progress;
+    text-decoration: underline;
+    text-shadow: -1px -1px 12px #440000;
+}
+
+.hover-button:hover {
+    background-color: black;
+    color: aqua;
+    box-shadow: -1px 1px 20px 13px red;
+}
+
+.handle {
+    transition: all 0.5s linear;
+
+}
+
+.handler {
+    transition: all 0.5s linear;
+}
+
+/* For Firefox */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* height */
+  ::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    box-shadow: inset 0px 1px 0px 0px rgb(255 0 0);
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00ff26;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0033ff;
+  }
+
+
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #00ff26;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0400ff;
+  }
+

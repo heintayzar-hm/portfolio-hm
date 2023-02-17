@@ -6,7 +6,7 @@ import { myData, mySocialMedia } from "../constant";
 const AboutMe = () : JSX.Element  => {
     return (
         <section className="bg-yellow-600 text-slate-700 p-10">
-        <div className="text-2xl font-bold italic pb-5">About me</div>
+        <div className="text-2xl font-bold italic pb-5 hover-class">About me</div>
             {
                 myData.map((data, index) => {
                     return (
@@ -14,7 +14,7 @@ const AboutMe = () : JSX.Element  => {
                     )
                 })
         }
-            <div className="text-2xl font-bold italic pt-5">Social Media</div>
+            <div className="text-2xl font-bold italic pt-5 hover-class">Social Media</div>
             <ul className="flex gap-5 py-3 px-5">
                 {
                     mySocialMedia.map((data, index) => {

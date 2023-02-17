@@ -1,15 +1,15 @@
 const Contact = () : JSX.Element  => {
     return (
         <section className="bg-yellow-600 text-slate-700 p-10">
-        <div className="text-2xl font-bold italic pb-5">Let's connect</div>
+        <div className="text-2xl font-bold italic pb-5 hover-class">Let's connect</div>
             <div>
                 <form method="post" className="flex flex-col gap-4">
                     <div className="flex gap-2">
-                    <label htmlFor="name" className="text-lg italic">Name: </label>
+                    <label htmlFor="name" className="text-lg italic hover-class">Name: </label>
                         <input type="text" placeholder="Name" className="h-8 italic bg-yellow-500 w-full focus:outline-none p-3" required />
                     </div>
                     <div className="flex gap-2">
-                    <label htmlFor="Email" className="text-lg italic">Email: </label>
+                    <label htmlFor="Email" className="text-lg italic hover-class">Email: </label>
                     <input type="email" placeholder="Email" className="h-8 italic bg-yellow-500 w-full focus:outline-none p-3" required/>
                    </div>
                     <div>
@@ -18,7 +18,7 @@ const Contact = () : JSX.Element  => {
                     </textarea>
                     </div>
 
-                    <button type="submit" className="bg-yellow-500 p-2">Send</button>
+                    <button type="submit" className="bg-yellow-500 p-2 hover-button">Send</button>
                 </form>
         </div>
       </section>

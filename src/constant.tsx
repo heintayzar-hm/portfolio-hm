@@ -25,7 +25,8 @@ const myProjects = [
         image: "https://media.giphy.com/media/8g0tNLBXOnEl9rLhXR/giphy.gif",
         live_link: "example.com",
         github_link: "https://github.com/heintayzar-hm/catalog-of-things",
-        tags: ["Sql, Ruby"]
+        tags: ["Sql, Ruby"],
+        id: 1
     },
     {
         name: "Catalog Of Things",
@@ -33,7 +34,8 @@ const myProjects = [
         image: "https://media.giphy.com/media/8g0tNLBXOnEl9rLhXR/giphy.gif",
         live_link: "example.com",
         github_link: "https://github.com/heintayzar-hm/catalog-of-things",
-        tags: ["Sql, Ruby"]
+        tags: ["Sql, Ruby"],
+        id: 2
     },
     {
         name: "Catalog Of Things",
@@ -41,7 +43,8 @@ const myProjects = [
         image: "https://api.time.com/wp-content/uploads/2019/08/better-smartphone-photos.jpg",
         live_link: "example.com",
         github_link: "https://github.com/heintayzar-hm/catalog-of-things",
-        tags: ["Sql, Ruby"]
+        tags: ["Sql, Ruby"],
+        id: 3
     },
     {
         name: "Catalog Of Things",
@@ -49,7 +52,8 @@ const myProjects = [
         image: "https://media.giphy.com/media/8g0tNLBXOnEl9rLhXR/giphy.gif",
         live_link: "example.com",
         github_link: "https://github.com/heintayzar-hm/catalog-of-things",
-        tags: ["Sql, Ruby"]
+        tags: ["Sql, Ruby"],
+        id: 4
     },
     {
         name: "Catalog Of Things",
@@ -57,7 +61,8 @@ const myProjects = [
         image: "https://media.giphy.com/media/8g0tNLBXOnEl9rLhXR/giphy.gif",
         live_link: "example.com",
         github_link: "https://github.com/heintayzar-hm/catalog-of-things",
-        tags: ["Sql, Ruby"]
+        tags: ["Sql, Ruby"],
+        id: 5
     },
 ]
 const totalProjects = myProjects.length;

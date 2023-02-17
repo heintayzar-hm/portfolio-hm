@@ -2,7 +2,7 @@ import { testimony } from "../constant";
 const Testimony = () : JSX.Element  => {
     return (
         <section className="bg-slate-300 p-10">
-            <h3 className="text-2xl font-bold italic pb-5">Testimony</h3>
+            <h3 className="text-2xl font-bold italic pb-5 hover-class">Testimony</h3>
             <ul className="overflow-x-auto flex rounded-lg p-1 min-h-[200px] bg-white">
                 {
                     testimony.map((testimony, index) => {
