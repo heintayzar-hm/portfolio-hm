@@ -3,7 +3,7 @@ import Project from "./Project";
 const Projects = () : JSX.Element  => {
     return (
 
-        <section className="bg-violet-500 p-10">
+        <section className="bg-violet-500 p-10 section">
             <div className="text-2xl font-bold italic pb-5 hover-class">Projects</div>
             <ul className="grid sm:grid-cols-2 grid-cols-1 gap-5">
                 {

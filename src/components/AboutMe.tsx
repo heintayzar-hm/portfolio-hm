@@ -5,7 +5,7 @@ import { myData, mySocialMedia } from "../constant";
 
 const AboutMe = () : JSX.Element  => {
     return (
-        <section className="bg-yellow-600 text-slate-700 p-10">
+        <section className="bg-yellow-600 text-slate-700 p-10 section">
         <div className="text-2xl font-bold italic pb-5 hover-class">About me</div>
             {
                 myData.map((data, index) => {

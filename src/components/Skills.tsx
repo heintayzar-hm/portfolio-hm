@@ -3,7 +3,7 @@ import { mySkills, totalProjects } from "../constant";
 const Skills = (): JSX.Element => {
     const [showAll, setShowAll] = useState(false)
     return (
-        <section className=" bg-teal-500 p-10">
+        <section className=" bg-teal-500 p-10 section">
             <div className="text-2xl font-bold italic hover-class">Skills</div>
             <div className="grid grid-cols-2 sm:grid-cols-3">
             {

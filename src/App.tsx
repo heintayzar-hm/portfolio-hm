@@ -11,7 +11,7 @@ function App() {
     <>
       <Header />
 
-      <main>
+      <main className="section">
 
       <AboutMe />
 
