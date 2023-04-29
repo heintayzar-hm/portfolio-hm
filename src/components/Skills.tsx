@@ -1,50 +1,89 @@
-import { useState } from "react";
-import { mySkills, totalProjects } from "../constant";
-const Skills = (): JSX.Element => {
-    const [showAll, setShowAll] = useState(false)
-    return (
-        <section className=" bg-teal-500 p-10 section">
-            <div className="text-2xl font-bold italic hover-class">Skills</div>
-            <div className="grid grid-cols-2 sm:grid-cols-3">
-            {
-                    mySkills.map((data, index) => {
-                        const skills = (showAll) ? data.skills : data.skills.slice(0, 4)
-                    return (
-                        <div key={index}>
-                            <h3 className="p-5 text-lg italic font-semibold text-slate-700 hover-class">{data.name}</h3>
-                            <ul className="flex flex-wrap gap-5 py-3 px-5">
-                                {
-                                    skills.map((skill, index) => {
-                                        return (
-                                            <li className="w-full">
-                                                <div className="flex justify-between px-3">
-                                                    <span className="text-cyan-700 hover-class-2">{skill.name}</span>
-                                                    <span className="text-slate-700 hover-class-2">
-                                                        {skill.value}
-                                                        ({(100 * skill.value) / totalProjects}%)
-                                                    </span>
-                                                </div>
-                                                <div key={index} className="bg-black h-2 w-full rounded">
-                                                    <div style={{
-                                                    width: `${(100 * skill.value) / totalProjects}%`
-                                                    }} className=" bg-red-700  h-full w-0 rounded"></div>
-                                                </div>
-                                            </li>
-                                        )
-                                    })
-                                }
-                            </ul>
-                        </div>
-                    )
-                })
-                }
-            </div>
-            <div className="flex w-full items-center justify-center mt-2">
-            <button type="button" className="" onClick={() => setShowAll(!showAll)}>
-                <div className="p-2 hover-button bg-zinc-600 rounded-lg text-cyan-500">Load More</div>
-            </button>
-            </div>
+import { useEffect, useRef, useState } from "react";
+import { mySkills, mySkillsDescription, quote, totalProjects } from "../constant";
+import MySkills from "./MySkills";
+import TextWriter from "./TextWriter";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
+const Skills = (): JSX.Element => {
+    const [showFrontend, setShowFrontend] = useState(true);
+    const mySkillsDescriptionRef = useRef(null);
+    const mySkillsRef = useRef(null);
+    const showHandler = () => {
+        setShowFrontend(!showFrontend);
+    }
+
+    useEffect(() => {
+        const description = mySkillsDescriptionRef.current;
+        const skills = mySkillsRef.current;
+
+        gsap.fromTo(
+          description,
+          { x: "-=20", opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 0.5,
+            stagger: 0.5,
+            scrollTrigger: {
+              trigger: description,
+                start: "top 100%",
+                end: "bottom 100%",
+                scrub: true,
+            },
+          }
+        );
+
+        gsap.fromTo(
+            skills,
+            { x: "+=100", opacity: 0 },
+            {
+                x: 0,
+                opacity: 1,
+                duration: 1,
+                stagger: 0.5,
+                scrollTrigger: {
+                    trigger: skills,
+                    start: "top 100%",
+                    end: "bottom 100%",
+                    scrub: true,
+                    toggleActions: "play none none none",
+                },
+
+            }
+        )
+      }, []);
+
+
+
+    return (
+        <section className="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-black via-gray-900 to-gray-700  p-10 min-h-screen text-white section hover:shadow-[inset_0px_2px_20px_1px_black] overflow-x-hidden">
+            <div className="text-2xl font-bold italic hover-class pb-5">Skills</div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <p className="break-words" ref={mySkillsDescriptionRef}>{mySkillsDescription}</p>
+                <div>
+                    <div ref={mySkillsRef}>
+                        <h3 className="grid sm:grid-cols-2 grid-cols-1 px-2 py-3 text-center">
+                            <button type="button" disabled={(showFrontend)} className={(!showFrontend) ? ``: `bg-blue-500 p-2 border-r border-[#08fdd8]`} onClick={showHandler}>Frontend</button>
+                            <button type="button" disabled={(!showFrontend)} className={(showFrontend) ? ``: `bg-blue-500 p-2 border-l border-[#08fdd8]`} onClick={showHandler}>Backend </button>
+                        </h3>
+                        {showFrontend && (<section className="border border-[#08fdd8] min-h-[400px] px-2 py-3 space-y-5">
+                            <MySkills skills={mySkills[0].skills}></MySkills>
+                            <TextWriter characters={
+                                quote[0]
+                            }></TextWriter>
+                        </section>)}
+                        {!showFrontend && (<section className="border border-[#08fdd8] min-h-[400px] px-2 py-3 space-y-5">
+                            <MySkills skills={mySkills[1].skills}></MySkills>
+                            <TextWriter characters={
+                                quote[1]
+                            }></TextWriter>
+                        </section>)}
+                </div>
+            </div>
+            </div>
         </section>
     );
   };

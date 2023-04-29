@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Project = ({
   name,
@@ -17,43 +17,18 @@ const Project = ({
   tags: string[];
   id: number;
 }): JSX.Element => {
-  const [hoveredProject, setHoveredProject] = useState(false);
-
-  const handleEnterProjectHover = (event: React.MouseEvent<HTMLLIElement>) => {
-    const handleElement = event.currentTarget.querySelector(`.selector-${id}`);
-    const handlerElement = event.currentTarget.querySelector(`.select-${id}`);
-
-    if (handleElement?.classList.contains('hidden')) {
-      handleElement.classList.remove('hidden');
-      handlerElement?.classList.add('hidden');
-      setTimeout(function () {
-        handleElement.classList.remove('opacity-0');
-      }, 20);
-    } else {
-      handleElement?.classList.add('opacity-0');
-      handleElement?.addEventListener('transitionend', function(e) {
-        handleElement.classList.add('hidden');
-        handlerElement?.classList.remove('hidden');
-      }, {
-        capture: false,
-        once: true,
-        passive: false
-      });
-    }
-    setHoveredProject(!hoveredProject);
-  };
+  const project = useRef(null)
 
   return (
     <li
-      className= "relative h-[360px] text-purple-500"
-      onMouseEnter={handleEnterProjectHover}
-      onMouseLeave={handleEnterProjectHover}
+      ref={project}
+      className= "relative max-h-[450px] text-purple-500 group hover opacity-0"
     >
-      <div className={`handle selector-${id}`}>
-        <img src={image} alt={name} className="h-[300px] w-full object-cover" />
+      <div className="group-hover:hidden">
+        <img src={image} alt={name} className="aspect-[16/12] w-full object-cover" />
       </div>
-      <div className={`hidden handler select-${id}`}>
-        <div className=" h-[300px] flex flex-col gap-3 bg-black p-5">
+      <div className="group-hover:block hidden">
+        <div className="aspect-[16/12] overflow-y-scroll flex flex-col gap-3 bg-black p-5">
           <h3 className="text-2xl font-semibold italic text-slate-200 hover-class">{name}</h3>
           <p className="font-medium text-slate-300 hover-class">{description}</p>
           <div className="flex">
@@ -66,7 +41,7 @@ const Project = ({
           </div>
         </div>
       </div>
-      <div className="h-[60px]">
+      <div className="">
         <div className='h-full bg-purple-500'>
           <div className="w-full flex justify-around  bg-black py-[8px]">
             <a href={live_link}   target="_blank" className="hover-button p-[13px] rounded-xl">Live Link</a>

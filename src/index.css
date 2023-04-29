@@ -1,17 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .hover-class:hover {
     color: #ed7914;
-    cursor: progress;
     text-shadow: 0 0 1rem #04ff97, -0.2rem 0.1rem 0rem #000000, -15rem 14rem 20rem #c32828;
     font-style: italic;
 }
 
+body {
+   background-color: black;
+}
+
+html {
+  font-family: 'Poltawski Nowy', serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: large;
+}
+body {
+  background-image: conic-gradient(at top, var(--tw-gradient-stops)),
+}
 .hover-class-2:hover {
     color: blue;
-    cursor: progress;
     text-decoration: underline;
     text-shadow: -1px -1px 12px #440000;
 }
@@ -20,6 +31,10 @@
     background-color: black;
     color: aqua;
     box-shadow: -1px 1px 20px 13px red;
+}
+
+.hover-input:focus {
+  box-shadow: inset -1px 1px 20px 0px #009fff;
 }
 
 .handle {
@@ -76,7 +91,7 @@
     background: #0400ff;
   }
 
-  .section {
+  /* .section {
     transform: translateX(-100%);
     animation: slide-in 1s forwards;
   }
@@ -86,7 +101,7 @@
       opacity: 1;
       transform: translateX(0);
     }
-  }
+  } */
 
   .box{
     top: 0; left: 0;
@@ -164,3 +179,34 @@
       transform: translateY(-20px)
     }
   }
+
+  section{
+    border: 1px solid white;
+  }
+
+
+  #text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #text {
+    font-size: 1.2rem;
+    text-align: center;
+    opacity: 0;
+    animation: write-text 1s forwards;
+  }
+
+
+  @keyframes write-text {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
