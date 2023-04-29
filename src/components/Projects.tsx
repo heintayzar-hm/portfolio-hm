@@ -38,7 +38,7 @@ const Projects = (): JSX.Element => {
 
         <section className=" p-10 text-white section hover:shadow-[inset_0px_2px_20px_1px_black] bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
             <div className="text-2xl font-bold italic pb-5 hover-class">Projects</div>
-            <ul className="grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(350px,_1fr))] gap-10" ref={projectsRef}>
+            <ul className="grid grid-cols-[repeat(auto-fill,minmax(300px,_1fr))]   md:grid-cols-[repeat(auto-fill,minmax(350px,_1fr))] gap-10" ref={projectsRef}>
                 {
                     myProjects.map((project, index) => {
                         return (

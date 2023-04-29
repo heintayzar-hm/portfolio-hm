@@ -20,17 +20,18 @@ const Skills = (): JSX.Element => {
 
         gsap.fromTo(
           description,
-          { x: "-=20", opacity: 0 },
+          { x: "-=100", opacity: 0 },
           {
             x: 0,
             opacity: 1,
-            duration: 0.5,
+            duration: 1,
             stagger: 0.5,
             scrollTrigger: {
               trigger: description,
                 start: "top 100%",
                 end: "bottom 100%",
                 scrub: true,
+                toggleActions: "play none none none",
             },
           }
         );
@@ -62,7 +63,16 @@ const Skills = (): JSX.Element => {
             <div className="text-2xl font-bold italic hover-class pb-5">Skills</div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <p className="break-words" ref={mySkillsDescriptionRef}>{mySkillsDescription}</p>
+                <p className="break-words" ref={mySkillsDescriptionRef}>
+                <pre className="whitespace-pre-line sm:text-base text-sm">
+                        {
+                            mySkillsDescription.map((str) => {
+                                return (
+                                    <><p>&nbsp; &nbsp; &nbsp; {str}</p><br /></>
+                                );
+                            })
+                }
+                </pre></p>
                 <div>
                     <div ref={mySkillsRef}>
                         <h3 className="grid sm:grid-cols-2 grid-cols-1 px-2 py-3 text-center">

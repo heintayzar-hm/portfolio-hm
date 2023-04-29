@@ -3,10 +3,6 @@ import TextWriter from "./TextWriter";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header = (): JSX.Element => {
-  const handleContact = (e:any) => {
-    e.preventDefault();
-
-  }
   return (
     <section className="section uppercase text-white border hover:shadow-[inset_0px_2px_20px_1px_black] h-screen" id="header">
       <div className="flex flex-col p-10 text-base h-screen">
@@ -25,7 +21,7 @@ const Header = (): JSX.Element => {
         <div className="my-auto grid md:grid-cols-2 grid-cols-1 sm:gap-1 gap-5">
           <div className="flex flex-col">
           <h2 className="font-semibold flex gap-3 text-[50px] text-center">
-          I'm{" "}
+          <span className="sm:block hidden">I'm{" "}</span>
           <span className="hover-class-2 p-2" >
             <div className="pop">
               <span style={{ "--i": 1 } as CSSProperties}>H</span>

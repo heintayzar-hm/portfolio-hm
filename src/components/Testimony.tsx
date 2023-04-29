@@ -7,11 +7,12 @@ const Testimony = () : JSX.Element  => {
                 {
                     testimony.map((testimony, index) => {
                         return (
-                            <li key={index} className="p-2 min-w-[35vw] m-1 text-orange-400 bg-slate-500 min-h-[220px]">
-                                <a className="h-full block" href={testimony.link} target="_blank">
-                                <div className="text-2xl font-bold italic7">{testimony.name}</div>
-                                <div className="">{testimony.letter}</div>
-                                </a>
+                            <li key={index} className="p-2 min-w-[35vw] m-1   h-[220px] overflow-scroll bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-black via-gray-900 to-gray-700">
+                                <div className="h-full block" >
+                                    <a href={testimony.link} target="_blank" className="text-2xl font-bold italic7 hover:text-[aqua] text-purple-500">{testimony.name}</a>
+
+                                <div className="text-sm">{testimony.letter}</div>
+                                </div>
                             </li>
                         )
                     })

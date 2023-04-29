@@ -12,7 +12,7 @@ const AboutMe = (): JSX.Element => {
 
     useEffect(() => {
         const section = sectionRef.current
-        console.log(section)
+
         if (!section) return;
         gsap.fromTo(
             section.children,
@@ -27,17 +27,17 @@ const AboutMe = (): JSX.Element => {
                     trigger: section,
                     start: "top 100%",
                     end: "bottom 100%",
-                    toggleActions: "restart none none none",
+                    toggleActions: "play none none none",
                 },
             }
         )
     })
 
     return (
-        <section className=" text-white p-10 h-screen section hover:shadow-[inset_0px_2px_20px_1px_black] flex flex-col gap-3 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black"  >
+        <section className=" text-white p-10 min-h-screen section hover:shadow-[inset_0px_2px_20px_1px_black] flex flex-col gap-3 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black"  >
             <div className="text-2xl font-bold italic pb-5 hover-class">About me</div>
             <span><span className="text-[#08fdd8]">hein_tay_zar</span> = &#123;</span>
-            <div ref={sectionRef}>
+            <div ref={sectionRef} className="flex flex-col gap-3">
             {
                 myData.map((data, index) => {
                     return (
