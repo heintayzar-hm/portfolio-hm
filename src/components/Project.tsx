@@ -13,7 +13,7 @@ const Project = ({
   live_link: string;
   github_link: string;
   image: string;
-  description: string;
+  description: string[];
   tags: string[];
   id: number;
 }): JSX.Element => {
@@ -30,7 +30,15 @@ const Project = ({
       <div className="group-hover:block hidden">
         <div className="aspect-[16/12] overflow-y-scroll flex flex-col gap-3 bg-black p-5">
           <h3 className="text-2xl font-semibold italic text-slate-200 hover-class">{name}</h3>
-          <p className="font-medium text-slate-300 hover-class">{description}</p>
+          <ul className="font-medium text-sm text-slate-300 hover-class list-disc px-2">
+            {
+              description.map((desc) => {
+                return (
+                  <li>{desc}</li>
+                )
+              })
+            }
+          </ul>
           <div className="flex">
           <span className="font-medium px-2 text-slate-300 italic hover-class">Tech:</span>
           <ul>

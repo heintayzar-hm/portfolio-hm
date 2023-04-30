@@ -1,6 +1,9 @@
 import { BsGithub, BsTwitter, BsMedium, BsLinkedin } from 'react-icons/bs';
 import { FaAngellist } from 'react-icons/fa';
-
+import App from "./assets/images/app.gif";
+import Crypto from "./assets/images/crypto.png";
+import Human from "./assets/images/humanessential.png";
+import BudgetWise from "./assets/images/budgetWise.gif";
 const myData = [
     { name: "name", value: "Hein Tay Zar" },
     { name: "description", value: "As a Full-Stack Developer with 2+ years of experience, I thrive on challenges and bring a wealth of technical knowledge to the table. My expertise includes JavaScript, React, and Node.js, and I excel at quickly adapting to new technologies. I'm not just a solo coder - I'm a collaborative team player with strong soft skills, including 50+ pair programming sessions and 100+ code reviews. With a proven track record of building 10+ successful projects, I'm confident that I can add value to any team or organization."},
@@ -21,50 +24,82 @@ const mySocialMedia = [
 
 const myProjects = [
     {
-        name: "BudgetWise",
-        description: " a web app for easy expense tracking. Register, securely store info, and view the dashboard of categories and transaction totals. Add new transactions and categories with user-friendly forms. Built on Rails with Devise and Cancancan for security.",
-        image: "https://media.giphy.com/media/CsbMULi8lCqXIx2W3G/giphy.gif",
-        live_link: "example.com",
-        github_link: "https://github.com/heintayzar-hm/catalog-of-things",
-        tags: ["Sql, Ruby"],
+        name: "GVASH Planes",
+        description: [
+            "A web application where we can book new planes and see reservations.",
+            "Trained 5 junior developers and learned how to work as a team",
+            "Worked as a code reviewer and proposed new features that dramatically improved the application.",
+        ],
+        image: "https://media.licdn.com/dms/image/D562DAQGySC9_GzuaIg/profile-treasury-image-shrink_800_800/0/1682095775000?e=1683460800&v=beta&t=3lOltlJYgyf60Nww5DEWWgAu0XGyWZKKdv5BapJZ-Dg",
+        live_link: "https://gvash-planes.vercel.app/",
+        github_link: "https://github.com/V-Blaze/gvash-planes",
+        tags: ["React, Redux, TailwindCSS, Rails"],
         id: 1
     },
     {
-        name: "Catalog Of Things",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
-        image: "https://media.giphy.com/media/8g0tNLBXOnEl9rLhXR/giphy.gif",
-        live_link: "example.com",
-        github_link: "https://github.com/heintayzar-hm/catalog-of-things",
-        tags: ["Sql, Ruby"],
+        name: "Human Essentials",
+        description: ["An open-source project that aims to end poverty in all its forms everywhere.",
+        "Suggested changes to the codebase and proposed new changes to the design.",
+            "Learned how the workflows are in real-world projects.",
+        "Fixed bugs and improved community."
+        ],
+        image: Human,
+        live_link: "https://humanessentials.app/",
+        github_link: "https://github.com/rubyforgood/human-essentials",
+        tags: ["Ruby On Rails, Open Sources"],
         id: 2
     },
     {
-        name: "Catalog Of Things",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
-        image: "https://api.time.com/wp-content/uploads/2019/08/better-smartphone-photos.jpg",
-        live_link: "example.com",
-        github_link: "https://github.com/heintayzar-hm/catalog-of-things",
-        tags: ["Sql, Ruby"],
-        id: 3
-    },
-    {
-        name: "Catalog Of Things",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
-        image: "https://media.giphy.com/media/8g0tNLBXOnEl9rLhXR/giphy.gif",
-        live_link: "example.com",
+        name: "BudgetWise",
+        description: [
+            "A web application for easy expense tracking. Register, securely store info, and view the dashboard of categories and transaction totals. Add new transactions and categories with user-friendly forms. ",
+            "Learned how to document and make a logo for the application.",
+            "Built on Rails with Devise Gem and Cancancan Gem for security and authorization. "
+        ],
+        image: BudgetWise,
+        live_link: "https://budgetwise-nut9.onrender.com/",
         github_link: "https://github.com/heintayzar-hm/BudgetWise",
-        tags: ["Ruby, Tailwindcss, Psql"],
+        tags: ["Ruby, Tailwindcss, Psql, Rails"],
         id: 4
     },
     {
-        name: "Catalog Of Things",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
-        image: "https://media.giphy.com/media/8g0tNLBXOnEl9rLhXR/giphy.gif",
-        live_link: "example.com",
-        github_link: "https://github.com/heintayzar-hm/catalog-of-things",
-        tags: ["Sql, Ruby"],
+        name: "FlimFrenzy",
+        description: [
+            "A movie application where you can see all the latest movies that are airing right now.",
+            "It is a Single Page Application (SPA) with JavaScript.",
+            "Learned how to build a Single Page Application (SPA) without a framework or libraries.            "
+        ],
+        image: "https://media.licdn.com/dms/image/C562DAQE7jM_85j9JDw/profile-treasury-image-shrink_800_800/0/1673034822229?e=1683464400&v=beta&t=Uny03A0thV3UjpW8GQyIiSR2KoI-cazbq6b4awhLk2M",
+        live_link: "https://heintayzar-hm.github.io/FilmFrenzy/dist",
+        github_link: "https://github.com/heintayzar-hm/FilmFrenzy",
+        tags: ["JavaScript, HTML, CSS"],
         id: 5
     },
+    {
+        name: "Crypto",
+        description: [
+            "A real-time crypto application where you can see the trending cryptocurrencies and their market prices.",
+            "Used React and Redux, and learned new tools like Vite.",
+            "Learned how to work efficiently and independently.",
+        ],
+        image: Crypto,
+        live_link: "https://crypto-28lp.onrender.com/#/home/",
+        github_link: "https://github.com/heintayzar-hm/crypto",
+        tags: ["React, Redux, TailwindCSS"],
+        id: 6
+    },
+    {
+        name: "Blog",
+        description: ["A blog application where you can create, edit, and delete posts. You can also comment on posts and like them.",
+            "Used Ruby on Rails and learned how to use Devise Gem and Cancancan Gem for security and authorization.",
+            "Learned how to work efficiently and independently.",
+        ],
+        image: App,
+        live_link: "https://github.com/heintayzar-hm/blog",
+        github_link: "https://github.com/heintayzar-hm/blog",
+        tags: ["Ruby On Rails, Psql"],
+        id: 7
+    }
 ]
 const totalProjects = myProjects.length;
 export interface skillsInterFace {
