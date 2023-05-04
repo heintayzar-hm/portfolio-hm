@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="" id="smooth-wrapper">
+    <div className="font-primary text-base" id="smooth-wrapper">
       <div id="smooth-content">
       <div className="h-screen opacity-100 ">
          <div className="z-10 "><Header /></div>
