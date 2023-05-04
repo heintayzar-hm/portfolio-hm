@@ -5,7 +5,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        secondary: ['"Castoro Titling"', 'sans-serif'],
+        primary: ['"Comme"', 'cursive'],
+      },
+    },
   },
   plugins: [],
 }

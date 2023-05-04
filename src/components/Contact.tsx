@@ -29,7 +29,7 @@ const Contact = (): JSX.Element => {
     })
     return (
         <section id="contact" className=" text-white p-10 section hover:shadow-[inset_0px_2px_20px_1px_black] bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
-        <div className="text-2xl font-bold italic pb-5 hover-class">Let's connect</div>
+        <div className="text-2xl font-bold italic pb-5 hover-class font-secondary">Let's connect</div>
             <div>
                 <form method="POST" action="https://formspree.io/f/mqkjqlzl" ref={formRef}  className="flex flex-col gap-4">
                     <div className="flex gap-2">

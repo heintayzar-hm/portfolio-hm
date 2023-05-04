@@ -57,7 +57,7 @@ const Header = (): JSX.Element => {
                 offset={-20}
                 duration={3000}
 
-              className="tracking-widest font-thin cursor-pointer hover:bg-[#08fdd8] px-2 py-3 my-3 max-w-[250px] text-center border border-[#08fdd8] text-[#08fdd8] hover:text-black">Contact Me</Link>
+              className="tracking-widest font-secondary font-thin cursor-pointer hover:bg-[#08fdd8] px-2 py-3 my-3 max-w-[250px] text-center border border-[#08fdd8] text-[#08fdd8] hover:text-black">Contact Me</Link>
           </div>
          <TextWriter characters="Pushing the limits of what's possible with Rails and React"></TextWriter>
         </div>
