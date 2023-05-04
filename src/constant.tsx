@@ -4,6 +4,7 @@ import App from "./assets/images/app.gif";
 import Crypto from "./assets/images/crypto.png";
 import Human from "./assets/images/humanessential.png";
 import BudgetWise from "./assets/images/budgetWise.gif";
+import Recipe from "./assets/images/recipe.png";
 const myData = [
     { name: "name", value: "Hein Tay Zar" },
     { name: "description", value: "As a Full-Stack Developer with 2+ years of experience, I thrive on challenges and bring a wealth of technical knowledge to the table. My expertise includes JavaScript, React, and Node.js, and I excel at quickly adapting to new technologies. I'm not just a solo coder - I'm a collaborative team player with strong soft skills, including 50+ pair programming sessions and 100+ code reviews. With a proven track record of building 10+ successful projects, I'm confident that I can add value to any team or organization."},
@@ -99,6 +100,17 @@ const myProjects = [
         github_link: "https://github.com/heintayzar-hm/blog",
         tags: ["Ruby On Rails, Psql"],
         id: 7
+    },
+    {
+        name: "Recipe",
+        description: ["A recipe application where you can create, edit, and delete recipes",
+        " You can also comment on recipes and like them.",
+        ],
+        image: Recipe,
+        live_link: "https://recipe-app-jk5k.onrender.com/",
+        github_link: "https://github.com/Mujeeb4582/Recipe-app.git",
+        tags: ["Ruby On Rails, Psql"],
+        id: 8
     }
 ]
 const totalProjects = myProjects.length;

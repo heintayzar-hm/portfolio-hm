@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 .hover-class:hover {
-    color: #ed7914;
     text-shadow: 0 0 1rem #04ff97, -0.2rem 0.1rem 0rem #000000, -15rem 14rem 20rem #c32828;
     font-style: italic;
 }
@@ -22,19 +21,18 @@ body {
   background-image: conic-gradient(at top, var(--tw-gradient-stops)),
 }
 .hover-class-2:hover {
-    color: blue;
     text-decoration: underline;
     text-shadow: -1px -1px 12px #440000;
 }
 
 .hover-button:hover {
     background-color: black;
-    color: aqua;
-    box-shadow: -1px 1px 20px 13px red;
+    color: #08fdd8;
+    box-shadow: -1px 1px 20px 13px #08fdd8;
 }
 
 .hover-input:focus {
-  box-shadow: inset -1px 1px 20px 0px #009fff;
+  box-shadow: 1px 6px 20px 13px #08fdd8;
 }
 
 .handle {
@@ -88,7 +86,7 @@ body {
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #0400ff;
+    background: #08fdd8;
   }
 
   /* .section {
@@ -209,3 +207,30 @@ body {
     }
   }
 
+  .nav-link {
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 30px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+    font-style: oblique;
+    cursor: pointer;
+  }
+
+  .nav-link:hover {
+    color: #08fdd8;
+  }
+
+  .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #08fdd8;
+    transition: width 0.2s ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }

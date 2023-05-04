@@ -42,8 +42,11 @@ const Header = (): JSX.Element => {
               </div>
           </span>
         </h2>
-        <span className="hover-class-2 px-5 text-base italic mt-3">
+        <span className=" px-5 text-base italic mt-3">
               Rails-React Developer | Full-Stack Developer
+            </span>
+            <span className="-2 px-5 text-base italic mt-3">
+              <b>Fun Fact:</b> I solve a coding challenge every morning before I wash my face!!!!.
           </span>
           <br></br>
             <Link to="contact"

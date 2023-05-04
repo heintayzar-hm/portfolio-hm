@@ -22,7 +22,7 @@ const Project = ({
   return (
     <li
       ref={project}
-      className= "relative text-purple-500 group hover opacity-0"
+      className= "relative text-[#08fdd8] group hover opacity-0"
     >
       <div className="group-hover:hidden">
         <img src={image} alt={name} className="aspect-[16/12] w-full object-cover" />

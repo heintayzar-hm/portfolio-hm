@@ -59,7 +59,7 @@ const Skills = (): JSX.Element => {
 
 
     return (
-        <section className="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-black via-gray-900 to-gray-700  p-10 min-h-screen text-white section hover:shadow-[inset_0px_2px_20px_1px_black] overflow-x-hidden">
+        <section id="skills" className="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-black via-gray-900 to-gray-700  p-10 min-h-screen text-white section hover:shadow-[inset_0px_2px_20px_1px_black] overflow-x-hidden">
             <div className="text-2xl font-bold italic hover-class pb-5">Skills</div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -76,8 +76,8 @@ const Skills = (): JSX.Element => {
                 <div>
                     <div ref={mySkillsRef}>
                         <h3 className="grid sm:grid-cols-2 grid-cols-1 px-2 py-3 text-center">
-                            <button type="button" disabled={(showFrontend)} className={(!showFrontend) ? ``: `bg-blue-500 p-2 border-r border-[#08fdd8]`} onClick={showHandler}>Frontend</button>
-                            <button type="button" disabled={(!showFrontend)} className={(showFrontend) ? ``: `bg-blue-500 p-2 border-l border-[#08fdd8]`} onClick={showHandler}>Backend </button>
+                            <button type="button" disabled={(showFrontend)} className={(!showFrontend) ? ``: `bg-[#08fdd8] text-black p-2 border-r border-[#08fdd8]`} onClick={showHandler}>Frontend</button>
+                            <button type="button" disabled={(!showFrontend)} className={(showFrontend) ? ``: `bg-[#08fdd8] text-black p-2 border-l border-[#08fdd8]`} onClick={showHandler}>Backend </button>
                         </h3>
                         {showFrontend && (<section className="border border-[#08fdd8] min-h-[400px] px-2 py-3 space-y-5">
                             <MySkills skills={mySkills[0].skills}></MySkills>
