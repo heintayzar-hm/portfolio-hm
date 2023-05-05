@@ -34,7 +34,7 @@ const AboutMe = (): JSX.Element => {
     })
 
     return (
-        <section id="about" className=" text-white p-10 min-h-screen section hover:shadow-[inset_0px_2px_20px_1px_black] flex flex-col gap-3 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black"  >
+        <section id="about" className=" text-white p-16  section hover:shadow-[inset_0px_2px_20px_1px_black] flex flex-col gap-3 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black"  >
             <div className="text-2xl font-bold italic pb-5 hover-class font-secondary">About me</div>
             <span><span className="text-[#08fdd8]">hein_tay_zar</span> = &#123;</span>
             <div ref={sectionRef} className="flex flex-col gap-3">

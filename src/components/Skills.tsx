@@ -59,12 +59,12 @@ const Skills = (): JSX.Element => {
 
 
     return (
-        <section id="skills" className="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-black via-gray-900 to-gray-700  p-10 min-h-screen text-white section hover:shadow-[inset_0px_2px_20px_1px_black] overflow-x-hidden">
+        <section id="skills" className="bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-black via-gray-900 to-gray-700  p-16 text-white section hover:shadow-[inset_0px_2px_20px_1px_black] overflow-x-hidden">
             <div className="text-2xl font-bold italic hover-class pb-5 font-secondary">Skills</div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <p className="break-words" ref={mySkillsDescriptionRef}>
-                <pre className="whitespace-pre-line sm:text-base text-sm">
+                <pre className="whitespace-pre-line">
                         {
                             mySkillsDescription.map((str) => {
                                 return (

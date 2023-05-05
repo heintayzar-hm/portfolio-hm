@@ -18,7 +18,7 @@ const myData = [
 
 const mySocialMedia = [
     { name: "twitter", value: "https://twitter.com/heintayzarhm" , icon: <BsTwitter />},
-    { name: "github", value: "https://github.com/heintayzar-hm/", icon: <BsGithub /> },
+    { name: "github", value: "https://github.com/heintayzar-hm", icon: <BsGithub /> },
     { name: "medium", value: "https://medium.com/@heintayzarhm", icon: <BsMedium /> },
     { name: "linkedIn", value: "https://www.linkedin.com/in/hein-tay-zar/", icon: <BsLinkedin /> },
     { name: "angelist", value: "https://angel.co/u/hein-tay-zar", icon: <FaAngellist /> },

@@ -161,14 +161,14 @@ function initOciliator() {
 
     function colorSelector(num) {
         switch (num) {
+            // case 1:
+            //     return '#dc2626';
+            // case 2:
+            //     return '#991b1b';
             case 1:
-                return '#dc2626';
+                return '#08fdd8';
             case 2:
-                return '#991b1b';
-            // case 3:
-            //     return '#0284c7';
-            // case 4:
-            //     return 'blue';
+                return '#2227744';
             // case 5:
             //     return 'green';
             // case 6:
@@ -214,8 +214,8 @@ ctx.fillStyle = gradient;
     }
 
     function resize() {
-        ctx.canvas.width = window.innerWidth - 20;
-        ctx.canvas.height = window.innerHeight -20;
+        ctx.canvas.width = window.innerWidth - 5;
+        ctx.canvas.height = window.innerHeight -5;
     }
 
     function start() {
