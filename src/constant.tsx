@@ -6,6 +6,9 @@ import Human from "./assets/images/humanessential.png";
 import BudgetWise from "./assets/images/budgetWise.gif";
 import Recipe from "./assets/images/recipe.png";
 import AwesomeBooks from "./assets/images/awesomebooks.png";
+import CMS from "./assets/images/cms.png";
+import Film from "./assets/images/film.png";
+import Plane from "./assets/images/plane.png"
 const myData = [
     { name: "name", value: "Hein Tay Zar" },
     { name: "description", value: "As a Full-Stack Developer with 2+ years of experience, I thrive on challenges and bring a wealth of technical knowledge to the table. My expertise includes JavaScript, React, and Node.js, and I excel at quickly adapting to new technologies. I'm not just a solo coder - I'm a collaborative team player with strong soft skills, including 50+ pair programming sessions and 100+ code reviews. With a proven track record of building 10+ successful projects, I'm confident that I can add value to any team or organization."},
@@ -32,7 +35,7 @@ const myProjects = [
             "Trained 5 junior developers and learned how to work as a team",
             "Worked as a code reviewer and proposed new features that dramatically improved the application.",
         ],
-        image: "https://media.licdn.com/dms/image/D562DAQGySC9_GzuaIg/profile-treasury-image-shrink_800_800/0/1682095775000?e=1683460800&v=beta&t=3lOltlJYgyf60Nww5DEWWgAu0XGyWZKKdv5BapJZ-Dg",
+        image: Plane,
         live_link: "https://gvash-planes.vercel.app/",
         github_link: "https://github.com/V-Blaze/gvash-planes",
         tags: ["React, Redux, TailwindCSS, Rails"],
@@ -71,7 +74,7 @@ const myProjects = [
             "It is a Single Page Application (SPA) with JavaScript.",
             "Learned how to build a Single Page Application (SPA) without a framework or libraries.            "
         ],
-        image: "https://media.licdn.com/dms/image/C562DAQE7jM_85j9JDw/profile-treasury-image-shrink_800_800/0/1673034822229?e=1683464400&v=beta&t=Uny03A0thV3UjpW8GQyIiSR2KoI-cazbq6b4awhLk2M",
+        image: Film,
         live_link: "https://heintayzar-hm.github.io/FilmFrenzy/dist",
         github_link: "https://github.com/heintayzar-hm/FilmFrenzy",
         tags: ["JavaScript, HTML, CSS"],
@@ -125,9 +128,10 @@ const myProjects = [
     {
         name: "BookStore CMS",
         description: ["BookStore-CMS is a React and Firebase-powered web application designed for book enthusiasts who want to manage their book collection and categories with ease.","Contaned black and white thems", "Demonstrated exceptional proficiency in working independently, consistently delivering high-quality results while using 3 different new technologies", "Acquired valuable insights and expertise in developing modern web applications, further enhancing professional development and skills in front-end development"],
+        image: CMS,
         live_link: "https://bookstore-cms.vercel.app/",
         github_link: "https://github.com/heintayzar-hm/Bookstore",
-        tags: ["React", "Redux", "FireStore", "Two Themes"],
+        tags: ["React", "Redux", "FireStore", "Two Themes", "TailwindCSS"],
         id: 9
 
     }
