@@ -119,8 +119,17 @@ const myProjects = [
         image: AwesomeBooks,
         live_link: "https://heintayzar-hm.github.io/awesomebooks/",
         github_link: "https://github.com/heintayzar-hm/awesomebooks.git",
-        tags: ["React"],
+        tags: ["React", "Redux"],
         id: 9
+    },
+    {
+        name: "BookStore CMS",
+        description: ["BookStore-CMS is a React and Firebase-powered web application designed for book enthusiasts who want to manage their book collection and categories with ease.","Contaned black and white thems", "Demonstrated exceptional proficiency in working independently, consistently delivering high-quality results while using 3 different new technologies", "Acquired valuable insights and expertise in developing modern web applications, further enhancing professional development and skills in front-end development"],
+        live_link: "https://heintayzar-hm.github.io/awesomebooks/",
+        github_link: "https://github.com/heintayzar-hm/awesomebooks.git",
+        tags: ["React", "Redux", "FireStore", "Two Themes"],
+        id: 9
+
     }
 ]
 const totalProjects = myProjects.length;
