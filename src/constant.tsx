@@ -173,6 +173,7 @@ const mySkills = [
             { name: "Psql", value: 2 },
             { name: "PHP", value: 2 },
             { name: "Laravel", value: 2 },
+            {name: "Firebase", value: 2}
         ]
     }
 ] as MainSkillInterface[];
