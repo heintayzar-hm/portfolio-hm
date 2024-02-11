@@ -178,7 +178,7 @@ body {
   }
 
   section{
-    border: 1px solid white;
+    border: 1px solid transparent;
   }
 
 
@@ -208,7 +208,7 @@ body {
   }
 
   .nav-link {
-    color: white;
+    color: black;
     margin-right: 30px;
     text-decoration: none;
     position: relative;

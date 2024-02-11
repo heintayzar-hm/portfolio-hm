@@ -30,7 +30,7 @@ const Project = ({
       <div className="group-hover:block hidden">
         <div className="aspect-[16/12] overflow-y-scroll flex flex-col gap-3 bg-black p-5">
           <h3 className="text-2xl font-semibold italic text-slate-200 hover-class">{name}</h3>
-          <ul className="font-medium text-sm text-slate-300 hover-class list-disc px-2">
+          <ul className="font-medium text-md text-slate-300 hover-class list-disc px-2">
             {
               description.map((desc) => {
                 return (
@@ -43,7 +43,7 @@ const Project = ({
           <span className="font-medium px-2 text-slate-300 italic hover-class">Tech:</span>
           <ul>
             {tags.map((tag) => (
-              <li className="text-slate-300 hover-class-2">{tag}</li>
+              <li className="text-rose-500   hover-class-2">{tag}</li>
             ))}
           </ul>
           </div>

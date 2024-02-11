@@ -6,22 +6,10 @@ const Header = (): JSX.Element => {
   return (
     <section className="section uppercase text-white border hover:shadow-[inset_0px_2px_20px_1px_black] h-screen" id="header">
       <div className="flex flex-col p-10 text-base h-screen">
-        <span className="hover-class font-bold text-[80px]">
-          <div className="hidden sm:flex  box">
-            <span>H</span>
-            <span>I</span>
-            <span>,</span>
-            <span>T</span>
-            <span>H</span>
-            <span>E</span>
-            <span>R</span>
-            <span>E</span>
-          </div>
-        </span>
         <div className="my-auto grid md:grid-cols-2 grid-cols-1 sm:gap-1 gap-5">
           <div className="flex flex-col">
           <h2 className="font-semibold flex gap-3 text-[50px] text-center">
-          <span className="sm:block hidden">I'm{" "}</span>
+          <span className="sm:block hidden capitalize">I'm{" "}</span>
           <span className="hover-class-2 p-2" >
             <div className="pop">
               <span style={{ "--i": 1 } as CSSProperties}>H</span>
@@ -42,12 +30,10 @@ const Header = (): JSX.Element => {
               </div>
           </span>
         </h2>
-        <span className=" px-5 text-base italic mt-3">
-              Rails-React Developer | Full-Stack Developer
+        <span className=" px-5 text-base mt-3 capitalize">
+              Nextjs Developer | Full-Stack Developer(with many technical skills and good communication skills)
             </span>
-            <span className="-2 px-5 text-base italic mt-3">
-              <b>Fun Fact:</b> I solve a coding challenge every morning before I wash my face!!!!.
-          </span>
+
           <br></br>
             <Link to="contact"
                 activeClass="active"
