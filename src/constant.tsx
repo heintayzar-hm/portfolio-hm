@@ -180,28 +180,29 @@ const mySkills = [
         // JavaScript, React, Redux, jQuery, HTML5, CSS3, TypeScript, SCSS, GSAP, Tailwind
         name: "Frontend",
         skills: [
+            { name: "Nextjs", value: 2 },
             { name: "React", value: 2 },
-            { name: "Tailwind", value: 2 },
             { name: "Redux", value: 2 },
-            { name: "jQuery", value: 2 },
             { name: "HTML5", value: 2 },
             { name: "CSS3", value: 2 },
             { name: "TypeScript", value: 2 },
-            { name: "SCSS", value: 2 },
-            { name: "GSAP", value: 2 },
+            { name: "PWA", value: 2 },
+            { name: "SEO", value: 2 },
         ]
     },
     {
         // Ruby, Ruby on Rails, MySQL, Nodejs, Psql, PHP, Laravel
         name: "Backend",
         skills: [
+            { name: "Nodejs", value: 2 },
+
             { name: "Ruby on Rails", value: 2 },
             { name: "MySQL", value: 2 },
-            { name: "Nodejs", value: 2 },
             { name: "Psql", value: 2 },
-            { name: "PHP", value: 2 },
+            { name: "mySql", value: 2 },
             { name: "Laravel", value: 2 },
-            {name: "Firebase", value: 2}
+            { name: "Firebase", value: 2 },
+            { name: "Nextjs", value: 2 },
         ]
     }
 ] as MainSkillInterface[];

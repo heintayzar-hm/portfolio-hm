@@ -45,7 +45,7 @@ const Navbar = () => {
     })
     return (
         <>
-        <nav ref={navRef} className="text-white md:block hidden text-sm lg:text-lg fixed top-0 lg:px-10 w-[100%] z-50 bg-black">
+        <nav ref={navRef} className="text-black md:block hidden text-sm lg:text-lg fixed top-0 lg:px-10 w-[100%] z-50 bg-white">
             <ul className="w-full h-6">
             <li className="nav-link px-2 py-3 float-right">
                 <Link to="contact"
