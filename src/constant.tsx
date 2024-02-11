@@ -8,7 +8,9 @@ import Recipe from "./assets/images/recipe.png";
 import AwesomeBooks from "./assets/images/awesomebooks.png";
 import CMS from "./assets/images/cms.png";
 import Film from "./assets/images/film.png";
-import Plane from "./assets/images/plane.png"
+import Plane from "./assets/images/plane.png";
+import Htwettoe from "./assets/images/htwettoe.png";
+import Dashboard from "./assets/images/dashboard.png";
 const myData = [
     { name: "name", value: "Hein Tay Zar" },
     { name: "description", value: "As a Full-Stack Developer with 2+ years of experience, I thrive on challenges and bring a wealth of technical knowledge to the table. My expertise includes JavaScript, React, and Node.js, and I excel at quickly adapting to new technologies. I'm not just a solo coder - I'm a collaborative team player with strong soft skills, including 50+ pair programming sessions and 100+ code reviews. With a proven track record of building 10+ successful projects, I'm confident that I can add value to any team or organization."},
@@ -29,6 +31,32 @@ const mySocialMedia = [
 
 const myProjects = [
     {
+        name: "Htwet Toe",
+        description: [
+            " A web application that is mainly used in Myanmar. It's aim is to help farmers to answer their questions and to provide them with the latest news and information.",
+            "I successfully build and led a team of 3 developers to create a web application that is now used by 10,000+ users.",
+            "I practiced and build the frontend using Nextjs and backend using nodejs, which was already built for mobile apps."
+        ],
+        live_link: "https://htwet-toe.com/",
+        github_link: "Javascript: void(0)",
+        tags: ["Nextjs, Nodejs, Seo, PWA, Internationalization"],
+        id: 1,
+        image: Htwettoe
+    },
+    {
+        name: "Dashboard for me",
+        description: [
+            "It is a web application that I used to track my daily activities and to see my progress as well as some necessary information in my life.",
+            "For example, record my daily expenses, see my daily progress, record some video that I used in my project, and learn languages.",
+            "I used Nextjs as a Full-Stack application and used TailwindCSS for styling. As for the database, I used Psql."
+        ],
+        live_link: "https://htwet-toe.com/",
+        github_link: "Javascript: void(0)",
+        image: Dashboard,
+        tags: ["Nextjs, Psql, TailwindCSS", "Full-Stack", "Learning Languages", "Record", "Prisma", "Nginx"],
+        id: 1,
+    },
+    {
         name: "GVASH Planes",
         description: [
             "A web application where we can book new planes and see reservations.",
@@ -39,7 +67,7 @@ const myProjects = [
         live_link: "https://gvash-planes.vercel.app/",
         github_link: "https://github.com/V-Blaze/gvash-planes",
         tags: ["React, Redux, TailwindCSS, Rails"],
-        id: 1
+        id: 2
     },
     {
         name: "Human Essentials",
@@ -52,7 +80,7 @@ const myProjects = [
         live_link: "https://humanessentials.app/",
         github_link: "https://github.com/rubyforgood/human-essentials",
         tags: ["Ruby On Rails, Open Sources"],
-        id: 2
+        id: 3
     },
     {
         name: "BudgetWise",
